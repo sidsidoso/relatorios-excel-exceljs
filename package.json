@@ -1,0 +1,36 @@
+{
+  "name": "relatorios-excel-exceljs",
+  "version": "1.0.0",
+  "description": "CLI que gera relatórios de vendas em Excel (.xlsx) com ExcelJS a partir de um banco SQLite.",
+  "type": "module",
+  "bin": {
+    "relatorio-vendas": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "dev": "node --watch src/cli.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "exceljs",
+    "xlsx",
+    "sqlite",
+    "relatorio",
+    "cli",
+    "nodejs"
+  ],
+  "author": "sidsidoso",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidsidoso/relatorios-excel-exceljs.git"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "exceljs": "4.4.0"
+  }
+}
